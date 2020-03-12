@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:labelFor="@+id/longitude"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/longitude" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:inputType="text|textAutoCorrect"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:labelFor="@+id/latitude"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:inputType="text|textAutoCorrect"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:labelFor="@+id/address"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:gravity="top"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- Button to add ride -->
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/maps"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+</LinearLayout>

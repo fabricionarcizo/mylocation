@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Location</string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="address">Address:</string>
+    <string name="maps">Google Maps</string>
+    <string
+        name="google_maps_key"
+        templateMergeStrategy="preserve"
+        translatable="false">YOUR_KEY_HERE</string>
+</resources>
